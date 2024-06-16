@@ -37,7 +37,14 @@
 
                         if ($result->num_rows > 0) {
                             while($row = $result->fetch_assoc()) {
-                                echo "<tr><td>" . $row["analysis_date"] . "</td><td>" . $row["email_from"] . "</td><td>" . $row["email_subject"] . "</td><td>" . $row["dkim_status"] . "</td><td>" . $row["spf_status"] . "</td><td>" . $row["links"] . "</td></tr>";
+                                echo "<tr>
+                                    <td>" . $row["analysis_date"] . "</td>
+                                    <td>" . $row["email_from"] . "</td>
+                                    <td>" . $row["email_subject"] . "</td>
+                                    <td>" . $row["dkim_status"] . "</td>
+                                    <td>" . $row["spf_status"] . "</td>
+                                    <td>" . $row["links"] . "</td>
+                                </tr>";
                             }
                         } else {
                             echo "<tr><td colspan='6'>Нет данных</td></tr>";

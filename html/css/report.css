@@ -28,6 +28,10 @@ h1 {
     height: 110px;
 }
 
+.table-container {
+    overflow-x: auto;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -38,6 +42,9 @@ th, td {
     padding: 10px;
     text-align: left;
     border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 th {
